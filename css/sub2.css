@@ -1,4 +1,9 @@
 @charset "UTF-8";
+h1{font-size: var(--slide-title);}
+h2{font-size: var(--main-title); }
+h5{font-size: var(--size-s);}
+
+
 @media(max-width:599px) {
 
 }
@@ -11,19 +16,44 @@
 
 }
                      /* 텍스트 애니메이션 and 움직이는 써클 */
-#textanimation{background-color: aqua; width: 100%; height: 150px; color: black
-    ; font-size: var(--slide-title);}
-#section1{position: relative;}
-#movingcircle{display: flex; position: absolute;}    
+#textanimation{background-color: gold; width: 100%; height: 150px; color: black
+    ;}
+.circle1{position: absolute; left: 15%; margin:5% 2%; animation:ani 1.6s infinite alternate;}
+.circle1 img{width: 50%;}
+.circle2{position: absolute; left: 65%; margin: 5%;animation:ani 1.4s infinite alternate;}
+.circle2 img{width: 70%;}
+.circle3{position: absolute; top:40%; margin: 2% 3%;animation:ani 1.5s infinite alternate;}
+.circle3 img{width: 80%;}
+
                      /* 섹션1 */
-#section1{background-color: gold; width: 100%; height: 1000px; display: flex;}
-.section1column1{background-color: red; width: 100%; height: 350px;}
+#section1{opacity: 0.5; width: 100%; height: 1500px;
+     position: relative; display: flex; flex-direction: column;}
+.section1column1{width: 100%; height: 500px;}
+.section1column1 div{text-align: center; margin-top:10%; color: black;}
+
+.section1column2{ width: 100%; height: 500px;display: flex; align-items: 
+    flex-end; justify-content: space-around;}
+.grape3{width: 100%; height: 150px; background-color: aqua; }
+.grape4{width: 100%; height: 250px; background-color: aqua; }
+.grape5{width: 100%; height: 350px; background-color: aqua; }
+    
+
+.section1column3{height: 500px; display: flex; }
+.section1column3 .textbox{background-color: white; width: 50%; border-radius: 70px 0 0 70px; border: 2px solid; display: flex; align-items: center; justify-content: center;}
+.smallgrape{background-color: black; width: 50%; border-radius:0 70px 70px 0;}
+
                      /* 섹션2 */
-#section2{background-color: bisque; width: 100%; height: 1000px;}
+#section2{background-color: bisque; width: 100%; height: 1000px; display: flex; flex-direction: column; align-items: center;justify-content: center;}
+#section2 .textbox{text-align: center;}
+table tr{margin: 100px;}
+table tr:nth-of-type(1){background-color: red;}
+table tr:nth-last-child(1){background-color: red;}
+
+
                      /* 섹션3 */
 #section3{background-color: yellowgreen; width: 100%; height: 1000px;}
 
                                  
-
+    
 
 
