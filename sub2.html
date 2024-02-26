@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>d</title>
 
+    <!-- 섹션3애니매이션 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/common.css" rel="stylesheet">
     <link href="css/sub2.css" rel="stylesheet">
+
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js"></script>
     <script src="js/index.js"></script>
     <!-- <script>
@@ -23,6 +26,7 @@
       });
     });
         </script> -->
+        <!-- 색션1애니메이션 -->
         <style>
             @keyframes ani {
                 0% {
@@ -35,9 +39,19 @@
             }
         </style>
         
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>        
+        
+        <script src="js/sub2.js"></script>
+        
         </head>
 
 <body>
+ 
+
+        
+
+
     <div id="wrap">
         <header>
             <div class="icon"></div>
@@ -224,11 +238,12 @@
 
         <div class="container">
             <div id="section3">
-                <div>
-                    <div>text
-
-                    </div>
+                <div class="textbox">
                     <div>
+                     <h5>엄선된 식재료와 까다로운 공정으로</h5>
+                     <h2>맛의 차별화</h2>    
+                    </div>
+                    <div class="iconbox">
                         <div>#업계유일</div>
                         <div>#자체생산</div>
                         <div>#자체개발</div>
@@ -236,29 +251,42 @@
                     </div>
                 </div>
 
-                <div>
-                    <div>명품재료가 명품 피자를 만든다</div>
-                    <div id="sliderwrap">
-                        <div>
-                            <div><img src="img" alt="img"></div>
-                            <p>자체개발 생효모숙성도우</p>
-                        </div>
-                        <div>
-                            <div><img src="img" alt="img"></div>
-                            <p>자체개발 토마토소스</p>
-                        </div>
-                        <div>
-                            <div><img src="img" alt="img"></div>
-                            <p>자체개발 국내산 고구마무스</p>
-                        </div>
-                        <div>
-                            <div><img src="img" alt="img"></div>
-                            <p>자체개발 특제 갈릭소스</p>
-                        </div>
+                <div class="section3banner">
+
+                    <div>
+                        <h3>명품재료가<br>명품 피자를 만든다</h3> <br>
+                        <h5><u>맛과 퀄리티를 높여 가성비 + 갓심비 다 잡은 반올림!</u></h5> <br>
+                        <h5>도우, 토마토소스, 갈릭소스, 고구마무스 등.<br>
+                            핵심원재료를 자체공장에서 생산해 전체가맹점에<br>
+                            공급하고 있습니다.</h5>
+                    </div>
+
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="img/section_03_slide_01.png" alt="img1">
+                                    <div class="textbox">ddd</div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/section_03_slide_02.png" alt="img1">
+                                    <div class="textbox">ddd</div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/section_03_slide_03.png" alt="img1">
+                                    <div class="textbox">ddd</div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/section_03_slide_04.png" alt="img1">
+                                    <div class="textbox">ddd</div>
+                                </div>
+                           
+                           
+                        </div> 
+                        <div class="swiper-scrollbar"></div>
                     </div>
 
                 </div>
-                <div id="#sliderbar"></div>
+               
             </div>
         </div>
 
@@ -267,6 +295,8 @@
 
 
     </div>
+
+    
 </body>
 
 </html>

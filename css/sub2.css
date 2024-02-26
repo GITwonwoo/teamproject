@@ -1,7 +1,10 @@
 @charset "UTF-8";
-h1{font-size: var(--slide-title);}
-h2{font-size: var(--main-title); }
-h5{font-size: var(--size-s);}
+h6{font-size: var(--size-xs);} /*15px*/
+u,h5{font-size: var(--size-s);} /*20px*/
+h4{font-size: var(--size-m);} /*30px*/
+h3{font-size: var(--size-l);} /*50px*/
+h2{font-size: var(--main-title); } /*65px*/
+h1{font-size: var(--slide-title);} /*100px*/
 
 
 @media(max-width:599px) {
@@ -43,17 +46,47 @@ h5{font-size: var(--size-s);}
 .smallgrape{background-color: black; width: 50%; border-radius:0 70px 70px 0;}
 
                      /* 섹션2 */
-#section2{background-color: bisque; width: 100%; height: 1000px; display: flex; flex-direction: column; align-items: center;justify-content: center;}
-#section2 .textbox{text-align: center;}
+#section2{background-color: bisque; width: 100%; height: 1000px; display: flex; flex-direction: column; align-items: center;}
+#section2 .textbox{text-align: center; margin: 5%;}
 table tr{margin: 100px;}
 table tr:nth-of-type(1){background-color: red;}
 table tr:nth-last-child(1){background-color: red;}
 
 
                      /* 섹션3 */
-#section3{background-color: yellowgreen; width: 100%; height: 1000px;}
-
+#section3{ width: 100%; height: 1000px; display: flex; flex-direction: column; align-items: center;}
+#section3 .textbox{text-align: center; width: 100%; margin: 5%;}
+.iconbox{display: flex; justify-content: center; margin-top:5%;}
+.iconbox>div{margin: 0 10px; border-radius: 20px; width: 10%; padding: 10px;}
+.iconbox div:nth-of-type(1){background-color: #AFC555;}
+.iconbox div:nth-of-type(2){background-color: #F6AC82;}
+.iconbox div:nth-of-type(3){background-color: #EC6A40;}
+.iconbox div:nth-of-type(4){background-color: #D7E2AA;}
                                  
-    
+.section3banner{display: flex; justify-content:space-around; align-items: center;
+    width:100%; height: 500px; background-color:skyblue; border: 20px solid #F6AC82; border-radius: 50px;}
+  
+      .swiper {
+        height:70%;
+        width: 60%;
+      
+      }
+  
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px; 
+      }
+  
+      .swiper-slide img {
+        display: block;
+        width: 90%;
+        height:90%;
+        object-fit: cover;
+      }
 
 
