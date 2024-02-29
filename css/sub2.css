@@ -22,34 +22,59 @@ h1{font-size: var(--slide-title);} /*100px*/
 
 }
                      /* 텍스트 애니메이션 and 움직이는 써클 */
-#textanimation{background-color: gold; width: 100%; height: 150px; color: black
-    ;}
-.circle1{position: absolute; left: 15%; margin:5% 2%; animation:ani 1.6s infinite alternate;}
+#textanimation{background-image: url(../img/flowtext.png); width: 100; height: 13vw; animation: rotate 300s linear infinite;}
+@keyframes rotate{
+  from{
+    background-position: 0 center;
+  }
+  to{
+    background-position: -10000px center;
+  }
+}
+.circle1{position: absolute; left: 15%; margin:8% 2%; animation:ani 1.6s infinite alternate;}
 .circle1 img{width: 50%;}
 .circle2{position: absolute; left: 65%; margin: 5%;animation:ani 1.4s infinite alternate;}
-.circle2 img{width: 70%;}
-.circle3{position: absolute; top:40%; margin: 2% 3%;animation:ani 1.5s infinite alternate;}
-.circle3 img{width: 80%;}
+.circle2 img{width: 60%;}
+.circle3{position: absolute;  margin: 15% 5%;animation:ani 1.5s infinite alternate;}
+.circle3 img{width: 50%;}
+.circle4{position: absolute; left: 60%; margin-top: 1%;}
+.circle4 img{width: 50%; animation:ani 1.5s infinite alternate;}
+@keyframes ani {
+  0% {
+      transform: translate(0, 0);
+  }
+
+  100% {
+      transform: translate(0, 50px);
+  }
+}
+  #rotatelogo img {animation: rotate_image 10s linear infinite;}
+          @keyframes rotate_image{
+          100%{
+              transform: rotate(360deg);}
+            }
+
 
                      /* 섹션1 */
 #section1{ width: 100%; height: 1500px;
      position: relative; display: flex; flex-direction: column;}
 .section1column1{width: 100%; height: 500px;}
-.section1column1 div{text-align: center; margin-top:10%; color: black;}
+.section1column1 div{text-align: center; margin:15%; color: black;}
+.textbg{background-color:#D7E2AA; font-size: var(--main-title);}
 
 .section1column2{ width: 100%; height: 500px;display: flex; align-items: 
-    flex-end; justify-content: space-around;}
-.grape3{width: 100%; height: 150px; background-color: aqua; }
-.grape4{width: 100%; height: 250px; background-color: aqua; }
-.grape5{width: 100%; height: 350px; background-color: aqua; }
-    
+    flex-end; justify-content: space-around; position: relative;}
+#grapebox{display: flex; flex-direction: column; align-items: center;}
+.pointer{width: 20px; height: 1vw; background-color:#AFC555; border-radius: 100%; position: absolute;}  
+  
+ 
 
 .section1column3{height: 500px; display: flex; }
 .section1column3 .textbox{background-color: #F6AC82; width: 50%; border-radius: 70px 0 0 70px; border: 2px solid; display: flex; align-items: center; justify-content: center;}
 .smallgrape{background-color: black; width: 50%; border-radius:0 70px 70px 0;}
 
                      /* 섹션2222 */
-#section2{ height: 1000px;}
+#section2{height: 100%;}
 #section2 .titlebox{text-align: center; margin: 5%;}
 .titlebox h6{color: #787878;}
 #section2 .table_caption{text-align: right; margin-bottom: 15px; padding-right: 40px; color: #787878;}
@@ -76,7 +101,7 @@ h1{font-size: var(--slide-title);} /*100px*/
 .div-table dd:nth-child(2){color: #787878;}
 /* label*/
 #section2 .label{display: flex;justify-content: center; align-items: center;
-flex-direction: column; background-color: #D7E2AA; border-radius: 50px;padding: 0.5vw; }
+flex-direction: column; background-color: #D7E2AA; border-radius: 50px;padding: 0.5vw; transition: 0.5s;}
 
 .div-table .table_guide{margin-top: 15px; padding: 30px 50px;
 background-color: #F6AC82;}
