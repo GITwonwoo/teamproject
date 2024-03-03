@@ -9,28 +9,29 @@ h1{font-size: var(--slide-title);} /*100px*/
 .textcolor50px{font-size: var(--size-l); color: #EC6A40;}   
 .textcolor30px{font-size: var(--size-m); color: #EC6A40;}
 
-
-@media(max-width:599px) {
-
-}
-
-@media(min-width:400px) and (max-width:600px) {
+#wrap{width: 100%;}
+@media(max-width:800px) {
 
 }
 
-@media(min-width:1100px) {
+@media(min-width:800px) and (max-width:1359px) {
+
+}
+
+@media(min-width:1360px) {
 
 }
                      /* 텍스트 애니메이션 and 움직이는 써클 */
-#textanimation{background-image: url(../img/flowtext.png); width: 100; height: 13vw; animation: rotate 300s linear infinite;}
-@keyframes rotate{
-  from{
-    background-position: 0 center;
-  }
-  to{
-    background-position: -10000px center;
-  }
-}
+#textanimation{font-weight:var(--weight-bb);}
+#textanimation h1{display:flex;  animation:flowRolling 15s infinite linear; 
+  font-weight: var(--weight-bb); justify-content: space-around; } 
+.textflex{display: flex; width: 300%;} 
+.textflex li{margin: 50px;}
+.textflex li:nth-child(odd){color: white; text-shadow:0 0 10px #EC6A40;}
+                       @keyframes flowRolling {
+                           from   { transform: translateX(0%); }
+                           to { transform: translateX(-80%); }
+                         }
 .circle1{position: absolute; left: 15%; margin:8% 2%; animation:ani 1.6s infinite alternate;}
 .circle1 img{width: 50%;}
 .circle2{position: absolute; left: 65%; margin: 5%;animation:ani 1.4s infinite alternate;}
@@ -64,14 +65,24 @@ h1{font-size: var(--slide-title);} /*100px*/
 
 .section1column2{ width: 100%; height: 500px;display: flex; align-items: 
     flex-end; justify-content: space-around; position: relative;}
+.section1column2 .arrow{position:absolute;}
 #grapebox{display: flex; flex-direction: column; align-items: center;}
 .pointer{width: 20px; height: 1vw; background-color:#AFC555; border-radius: 100%; position: absolute;}  
   
- 
 
 .section1column3{height: 500px; display: flex; }
-.section1column3 .textbox{background-color: #F6AC82; width: 50%; border-radius: 70px 0 0 70px; border: 2px solid; display: flex; align-items: center; justify-content: center;}
-.smallgrape{background-color: black; width: 50%; border-radius:0 70px 70px 0;}
+.section1column3 .textbox{background-color: #F6AC82; width: 50%; border-radius: 70px 0 0 70px; display: flex; align-items: center; justify-content: center;}
+.smallgrape{width: 50%; border-radius:0 70px 70px 0; background-image: url(../img/7pizza.JPG);  background-size: cover ; display: flex; align-items: flex-end; justify-content: space-around; text-align: center; line-height: 100px;}
+.smallgrape div:nth-of-type(1)>div{background-color: #787878; width:80px; height: 100px; transition: height 2s;}
+.smallgrape div:nth-of-type(2)>div{background-color: lightgray; width:80px; height: 150px;}
+.smallgrape div:nth-of-type(3)>div{background-color: #EC6A40; width: 100px; height: 250px; margin-left: 20%;} 
+.smallgrape div:nth-of-type(1)>h5{color: white; transition: height 2s;}
+.smallgrape div:nth-of-type(2)>h5{color: white;}
+.smallgrape div:nth-of-type(3)>h3{color: #EC6A40;}
+.smallgrape div:nth-of-type(3)>h5{color: white}
+.vs{margin-bottom: 20%; font-size: var(--size-l); color: white;}
+
+
 
                      /* 섹션2222 */
 #section2{height: 100%;}
@@ -152,6 +163,6 @@ background-color: #F6AC82;}
         height:70%;
         object-fit: cover;
       }
- 
+      
 
 
