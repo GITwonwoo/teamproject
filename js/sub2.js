@@ -1,5 +1,5 @@
 
-// --------------------------section1 큰 그래프-------------------------------
+// --------------------------section1 큰 그래프 ,tex로고 세트-------------------------------
 $(function(){
     
     $(window).scroll(function(){
@@ -8,32 +8,15 @@ $(function(){
 
       
         $('.section1column2 .arrowbox').css("animation","none").hide();
+        $('.graphtextani').css("animation","none").hide();
    
         if(ws>label-300 && ws<=label+400 ){     
-            $('.section1column2 .arrowbox').css("animation","grahLine 2.4s").show();
+            $('.section1column2 .arrowbox').css("animation","grahLine 3.4s").show();
+            $('.graphtextani').css("animation","grahLine 3.4s").show();
                         
         }
         if(ws>label+400){
             $('.section1column2 .arrowbox').css("animation","none");
-        }
-    });
-});
-
-// --------------------------section1 text로고 애니메이션-------------------------------
-$(function(){
-    
-    $(window).scroll(function(){
-        let ws=$(this).scrollTop();
-        let label= $('.graphtextani').offset().top;
-
-      
-        $('.graphtextani').css("animation","none").hide();
-   
-        if(ws>label-600 && ws<=label+1000 ){     
-            $('.graphtextani').css("animation","grahLine 2.4s").show();
-                        
-        }
-        if(ws>label+600){
             $('.graphtextani').css("animation","none");
         }
     });
@@ -43,17 +26,17 @@ $(function(){
     
     $(window).scroll(function(){
         let ws=$(this).scrollTop();
-        let label= $('.smallgrape>div').offset().top;
+        let label= $('.section1column2').offset().top;
 
-        if(ws<=label-1500){
-            $('.smallgrape>div').css("transform","translateY(0px)").css("opacity", "0");
-        }
-        if(ws>label-700 && ws<=label+50){     
-            $('.smallgrape>div').css("3Dtransform","translateY 2").css("opacity", "1");
+      
+        $('.smallgraph').css("animation","none").hide();
+   
+        if(ws>label-300 && ws<=label+500 ){     
+            $('.smallgraph').css("animation","grahLinethree 2.4s").show();
                         
         }
-        if(ws>label+50){
-            $('.smallgrape>div').css("transform","translateY(0px)").css("opacity", "0");
+        if(ws>label+500){
+            $('.smallgraph').css("animation","none");
         }
     });
 });
