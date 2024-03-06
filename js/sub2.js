@@ -1,5 +1,5 @@
 
-// --------------------------section1 큰 그래프 ,tex로고 세트-------------------------------
+// --------------------------section1 큰 그래프 -------------------------------
 $(function(){
     
     $(window).scroll(function(){
@@ -8,15 +8,55 @@ $(function(){
 
       
         $('.section1column2 .arrowbox').css("animation","none").hide();
-        $('.graphtextani').css("animation","none").hide();
+        
    
         if(ws>label-300 && ws<=label+400 ){     
             $('.section1column2 .arrowbox').css("animation","grahLine 3.4s").show();
-            $('.graphtextani').css("animation","grahLine 3.4s").show();
+           
                         
         }
         if(ws>label+400){
             $('.section1column2 .arrowbox').css("animation","none");
+           
+        }
+    });
+});
+// ------------------------------section1 그래프모바일 체인지---------------------
+$(document).ready(function () {
+    
+       function changeimage(){
+        if (window.matchMedia("(max-width: 1359px)").matches) {
+           
+            $(".section1column2 .arrowbox img").attr("src", "img/mobilearrow.png")
+        } else {
+ 
+            $(".section1column2 .arrowbox img").attr("src", "img/Group 1.png")
+        }
+    }
+
+    changeimage()
+    $(window).resize(changeimage);
+    
+});
+
+// --------------------------section1 tex로고 -------------------------------
+$(function(){
+    
+    $(window).scroll(function(){
+        let ws=$(this).scrollTop();
+        let label= $('.section1column2').offset().top;
+
+      
+       
+        $('.graphtextani').css("animation","none").hide();
+   
+        if(ws>label-300 && ws<=label+400 ){     
+         
+            $('.graphtextani').css("animation","grahLine 3.4s").show();
+                        
+        }
+        if(ws>label+400){
+           
             $('.graphtextani').css("animation","none");
         }
     });
@@ -100,7 +140,7 @@ $(function(){
 // --------------------------section3 마우스 드래그 슬라이더-------------------------------
 $(function () {
     var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1.3,
+        slidesPerView: 1,
         spaceBetween: 30,
         scrollbar: {
             el: ".swiper-scrollbar",
@@ -110,6 +150,17 @@ $(function () {
             delay: 2500,
             disableOnInteraction: false,
         },
+        breakpoints:{
+            700:{
+                slidesPerView:1.5
+            },
+            1100:{
+                slidesPerView: 2
+            },
+            1359:{
+                slidesPerView: 1.3
+            }
+        }
     });
 });
 
