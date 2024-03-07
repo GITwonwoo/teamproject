@@ -3,15 +3,16 @@
 
 @media(max-width:699px) {
 html{font-size: 3.5px;} 
-h6{font-size: var(--size-xs);} /*15px*/
-h5, u{font-size: var(--size-s);} /*20px*/
+h6,u{font-size: var(--size-xs);} /*15px*/
+h5{font-size: var(--size-s);} /*20px*/
 h4{font-size: var(--size-m);} /*30px*/
 h3{font-size: var(--size-l);} /*50px*/
-h2{font-size: var(--main-title); } /*65px*/
+h2{font-size: var(--size-l); } /*65px*/
 h1{font-size: var(--slide-title);} /*100px*/
-.textcolor65px{font-size: var(--main-title); color: #EC6A40;}
+.textcolor65px{font-size: var(--size-l); color: #EC6A40;}
 .textcolor50px{font-size: var(--size-l); color: #EC6A40;}   
 .textcolor30px{font-size: var(--size-m); color: #EC6A40;}
+
 
 
 
@@ -43,7 +44,7 @@ h1{font-size: var(--slide-title);} /*100px*/
       transform: translate(0, 50px);
   }
 }
-  #rotatelogo img {animation: rotate_image 10s linear infinite;}
+.circle1 img,.circle2 img {animation: rotate_image 10s linear infinite;}
           @keyframes rotate_image{
           100%{
               transform: rotate(360deg);}
@@ -56,7 +57,7 @@ h1{font-size: var(--slide-title);} /*100px*/
      position: relative; display: flex; flex-direction: column;}
 .section1column1{width: 100%; height: 300px;}
 .section1column1 div{text-align: center; margin:15%; color: black;;}
-.textbg{background-color:#D7E2AA; font-size: var(--main-title);}
+.textbg{background-color:#D7E2AA; font-size: var(--size-l);}
 
 /* 섹션1-2*/
 
@@ -88,9 +89,9 @@ h1{font-size: var(--slide-title);} /*100px*/
 
 /* 섹션1-3*/
 .section1column3{height: 500px; display: flex; flex-direction: column; align-items: center;margin-bottom: 20%;}
-.section1column3 .textbox{background-color: #F6AC82; width: 100%;  border-radius: 70px 70px 70px 70px; display: flex; align-items: center; justify-content: center; margin-bottom: 10%;}
-.smallgraphbox{width:100%; border-radius:70px 70px 70px 70px; background-image: url(../img/7pizza.JPG);  background-size: cover ;}
-.smallgraph{width:100%; display: flex; align-items: flex-end; 
+.section1column3 .textbox{background-color: #F6AC82; width: 100%; padding: 5%;  border-radius: 70px 70px 70px 70px; display: flex; align-items: center; justify-content: center; margin-bottom: 10%;}
+.smallgraphbox{padding: 5%; width:100%; border-radius:70px 70px 70px 70px; background-image: url(../img/7pizza.JPG);  background-size: cover ;}
+.smallgraph{ display: flex; align-items: flex-end; 
    justify-content: center; text-align: center; }
 .smallgraph div:nth-of-type(1)>div{background-color: #787878; width:50px; height: 100px;}
 .smallgraph div:nth-of-type(2)>div{background-color: lightgray; width:50px; height: 150px;}
@@ -98,7 +99,7 @@ h1{font-size: var(--slide-title);} /*100px*/
 .smallgraph div:nth-of-type(1)>h5{color: white; }
 .smallgraph div:nth-of-type(2)>h5{color: white; }
 .smallgraph div:nth-of-type(3)>h5{color: white}
-.smallgraph div:nth-of-type(3)>h3{color: #EC6A40;}
+.smallgraph div:nth-of-type(3)>h3{color: #EC6A40; font-size: var(--size-m);}
 .vs{ margin:10% 10%; font-size: var(--size-l); color: white;}
 
 .smallgraph{ animation: grahLinethree 1.5s; overflow: hidden; position: relative;}
@@ -166,7 +167,7 @@ margin: 0 5px;}
 .section3banner>div:nth-of-type(1){text-align: center;}
 .section3banner h5:nth-of-type(2){color:#787878}
 
-.swiper-slide h5{color:#787878}
+.swiper-slide h6{color:#787878}
 #section3 .textbox{width: 100%;}
       .swiper {
         margin-top: 10%;
@@ -174,26 +175,25 @@ margin: 0 5px;}
         width: 100%;
      
       }
-      .swiper-slide img{ margin: 5%;}
+      
       .swiper-slide {
         
-        font-size: 5vw;
+        
         background: #D7E2AA;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+      
         border-radius: 50px;
         height: 90%;
-        margin-bottom: 10%;
-        padding: 10%;
+     
+        
        
       }
-  
       .swiper-slide img {
-        display: block;
+        padding: 10%;
         width: 100%;
-        height:50%;
+        height:60%;
         object-fit: cover;
         
       }
@@ -205,8 +205,8 @@ margin: 0 5px;}
 /* @@@@@@@@@@@@@@@@@@@@@ 700 px @@@@@@@@@@@@@@@@@@@@@@ */
 @media(min-width:700px) and (max-width:1359px) {
   html{font-size: 4.5px;} 
-  h6{font-size: var(--size-xs);} /*15px*/
-  h5, u{font-size: var(--size-s);} /*20px*/
+  h6, u{font-size: var(--size-xs);} /*15px*/
+  h5{font-size: var(--size-s);} /*20px*/
   h4{font-size: var(--size-m);} /*30px*/
   h3{font-size: var(--size-l);} /*50px*/
   h2{font-size: var(--main-title); } /*65px*/
@@ -245,7 +245,7 @@ margin: 0 5px;}
         transform: translate(0, 50px);
     }
   }
-    #rotatelogo img {animation: rotate_image 10s linear infinite;}
+  .circle1 img,.circle2 img {animation: rotate_image 10s linear infinite;}
             @keyframes rotate_image{
             100%{
                 transform: rotate(360deg);}
@@ -366,7 +366,7 @@ margin: 0 5px;}
   .section3banner>div:nth-of-type(1){text-align: center;}
   .section3banner h5:nth-of-type(2){color:#787878}
   
-  .swiper-slide h5{color:#787878}
+  .swiper-slide h6{color:#787878}
   #section3 .textbox{width: 100%;}
         .swiper {
           margin: 1%;
@@ -389,7 +389,7 @@ margin: 0 5px;}
     
         .swiper-slide img {
           display: block;
-          width: 45%;
+          width: 50%;
           height:55%;
           object-fit: cover;
         }
@@ -401,8 +401,8 @@ margin: 0 5px;}
 
 /* @@@@@@@@@@@@@@@@@@@@@ 1 3 6 0 px @@@@@@@@@@@@@@@@@@@@@@ */
 @media(min-width:1360px) {
-h6{font-size: var(--size-xs);} /*15px*/
-h5, u{font-size: var(--size-s);} /*20px*/
+h6, u{font-size: var(--size-xs);} /*15px*/
+h5{font-size: var(--size-s);} /*20px*/
 h4{font-size: var(--size-m);} /*30px*/
 h3{font-size: var(--size-l);} /*50px*/
 h2{font-size: var(--main-title); } /*65px*/
@@ -441,7 +441,7 @@ h1{font-size: var(--slide-title);} /*100px*/
       transform: translate(0, 50px);
   }
 }
-  #rotatelogo img {animation: rotate_image 10s linear infinite;}
+  .circle1 img,.circle2 img {animation: rotate_image 10s linear infinite;}
           @keyframes rotate_image{
           100%{
               transform: rotate(360deg);}
@@ -451,7 +451,7 @@ h1{font-size: var(--slide-title);} /*100px*/
 /* 섹션1-1 */
 #section1{ width: 100%; margin-bottom: 20%;
      position: relative; display: flex; flex-direction: column;}
-#section1 h6{margin: 2%;}
+#section1 h6{margin-top:6%;}
 #section1 h5{margin: 2%;}
 .section1column1{width: 100%; height: 550px;}
 .section1column1 div{text-align: center; margin:15%; color: black;}
@@ -482,6 +482,7 @@ margin-bottom: 3%;}
   
 /* 섹션1-3*/
 .section1column3{height: 500px; display: flex; }
+.section1column3 h6{margin-top: 30%;}
 .section1column3 .textbox{background-color: #F6AC82; width: 50%; border-radius: 70px 0 0 70px; display: flex; align-items: center; justify-content: center;}
 .smallgraphbox{width: 50%; border-radius:0 70px 70px 0; background-image: url(../img/7pizza.JPG);  background-size: cover ;}
 .smallgraph{height: 80%; display: flex; align-items: flex-end; 
@@ -507,7 +508,7 @@ margin-bottom: 3%;}
                      /* 섹션2222 */
 #section2{height: 100%; margin: 20% 0;}
 #section2 .titlebox{text-align: center; margin: 5%;}
-.titlebox h6{color: #787878;}
+.titlebox h6{color: #787878; margin-top: 3%;}
 #section2 .table_caption{text-align: right; margin-bottom: 15px; padding-right: 40px; color: #787878;}
 
 

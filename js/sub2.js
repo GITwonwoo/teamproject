@@ -30,7 +30,7 @@ $(document).ready(function () {
             $(".section1column2 .arrowbox img").attr("src", "img/mobilearrow.png")
         } else {
  
-            $(".section1column2 .arrowbox img").attr("src", "img/Group 1.png")
+            $(".section1column2 .arrowbox img").attr("src", "img/Group1.png")
         }
     }
 
@@ -71,11 +71,11 @@ $(function(){
       
         $('.smallgraph').css("animation","none").hide();
    
-        if(ws>label-300 && ws<=label+500 ){     
+        if(ws>label-300 && ws<=label+900 ){     
             $('.smallgraph').css("animation","grahLinethree 2.4s").show();
                         
         }
-        if(ws>label+500){
+        if(ws>label+900){
             $('.smallgraph').css("animation","none");
         }
     });

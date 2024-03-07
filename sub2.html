@@ -5,21 +5,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>7th Streetpizza sub2</title>
-
-    <!-- 섹션3애니매이션 -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js"></script>
+    
+    <!-- 섹션3 마우스 슬라이더 플러그인 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- 섹션3 마우스 슬라이더 플러그인 -->
+   
 
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/common.css" rel="stylesheet">
     <link href="css/sub2.css" rel="stylesheet">
+    <link href="css/common_media.css" rel="stylesheet">
+    
+    
 
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js"></script>
+   
     <script src="js/index.js"></script>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <script src="js/sub2.js"></script>
+    <script src="js/common.js"></script>
 
 </head>
 
@@ -31,7 +37,10 @@
 
     <div id="wrap">
         <header>
-            <div class="icon"></div>
+            <div class="icon"><a href="#">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+            </div>
             <nav class="nav">
                 <ul>
                     <li>
@@ -41,15 +50,6 @@
                             <li><a href="#">피자</a></li>
                             <li><a href="#">SET BOX</a></li>
                             <li><a href="#">사이드</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">온라인주문</a>
-                        <ul class="submenu">
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
                         </ul>
                     </li>
                     <li>
@@ -90,7 +90,51 @@
                     </li>
                 </ul>
             </nav>
+            <a class="menu-trigger" href="#">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </a>
         </header>
+        <div class="menuWrap">
+            <ul class="reMenu">
+                <li>
+                    <a href="#">메뉴</a>
+                    <ul class="submenu">
+                        <li><a href="#">인기메뉴</a></li>
+                        <li><a href="#">피자</a></li>
+                        <li><a href="#">SET BOX</a></li>
+                        <li><a href="#">사이드</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">E쿠폰</a>
+                </li>
+                <li>
+                    <a href="#">회사소개</a>
+                    <ul class="submenu">
+                        <li><a href="#">7번가 소개</a></li>
+                        <li><a href="#">7 Secrets</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">CF광고</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">가맹문의</a>
+                    <ul class="submenu">
+                        <li><a href="#">창업상담</a></li>
+                        <li><a href="#">가맹점지원</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">이벤트</a>
+                    <ul class="submenu">
+                        <li><a href="#">온라인 이벤트</a></li>
+                        <li><a href="#">멤버쉽 혜택</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
         <!-- @@@@@@@@@@@ sub2 시작 @@@@@@@@@@ -->
         <div id="textanimation">
@@ -112,8 +156,8 @@
         </div>
         <div class="container">
             <div id="movingcircle">
-                <div class="circle1" id="rotatelogo"><img src="img/cheesepizza.png" alt="shirmp"></div>
-                <div class="circle2" id="rotatelogo"><img src="img/shirmp.png" alt="cheeseoven"></div>
+                <div class="circle1"><img src="img/cheesepizza.png" alt="shirmp"></div>
+                <div class="circle2"><img src="img/shirmp.png" alt="cheeseoven"></div>
                 <div class="circle3"><img src="img/7번가간판.png" alt="7th"></div>
                 <div class="circle4"><img src="img/cheeseoven.png" alt="7th"></div>
             </div>
@@ -133,7 +177,7 @@
 
                 <div class="section1column2">
                     <div class="arrowbox">
-                        <img class="arrow" src="img/Group 1.png" alt="grah_line">
+                        <img class="arrow" src="img/Group1.png" alt="grahline">
                     </div>
                     <div class="graphtextani">
                         <div class="graphbox">
