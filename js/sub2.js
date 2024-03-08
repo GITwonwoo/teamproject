@@ -151,6 +151,7 @@ $(function () {
             disableOnInteraction: false,
         },
         breakpoints:{
+           
             700:{
                 slidesPerView:1.5
             },
