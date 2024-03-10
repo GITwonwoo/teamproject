@@ -63,7 +63,7 @@ h1{font-size: var(--slide-title);} /*100px*/
 
 /* 섹션1-2*/
 
-.section1column2{ width: 100%; height: 500px; position: relative; }
+.section1column2{ width: 100%; height: 600px; position: relative; }
 .section1column2 .arrowbox{position:absolute;  animation: grahLine 3.4s; overflow: hidden; margin-top:30%;}
 @keyframes grahLine { 
   0% { width: 0%; }
@@ -83,9 +83,9 @@ h1{font-size: var(--slide-title);} /*100px*/
 .pointer{width: 20px; height: 20px; background-color:#AFC555; border-radius: 100%;} 
 .section1column2 .graphbox:nth-of-type(1){position: absolute; left:1vw; bottom: 5%;}
 .section1column2 .graphbox:nth-of-type(2){position: absolute; left:14vw; bottom: 10%;}
-.section1column2 .graphbox:nth-of-type(3){position: absolute; left:28vw; bottom: 14%;}
-.section1column2 .graphbox:nth-of-type(4){position: absolute; left:44vw; bottom: 20%;}
-.section1column2 .graphbox:nth-of-type(5){position: absolute; left:60vw; bottom: 40%;}
+.section1column2 .graphbox:nth-of-type(3){position: absolute; left:23vw; bottom: 14%;}
+.section1column2 .graphbox:nth-of-type(4){position: absolute; left:38vw; bottom: 20%;}
+.section1column2 .graphbox:nth-of-type(5){position: absolute; left:55vw; bottom: 28%;}
 .section1column2 .graphbox:nth-of-type(6){position: absolute; left:66vw; top: 75%;}
 .bigarrow{width: 50%; display: none;}
 
