@@ -64,7 +64,7 @@ h1{font-size: var(--slide-title);} /*100px*/
 /* 섹션1-2*/
 
 .section1column2{ width: 100%; height: 500px; position: relative; }
-.section1column2 .arrowbox{position:absolute;  animation: grahLine 3.4s; overflow: hidden; margin-top:35%;}
+.section1column2 .arrowbox{position:absolute;  animation: grahLine 3.4s; overflow: hidden; margin-top:30%;}
 @keyframes grahLine { 
   0% { width: 0%; }
   50% { width: 20%; }
