@@ -93,7 +93,7 @@ h1{font-size: var(--slide-title);} /*100px*/
 .section1column3{height: 500px; display: flex; flex-direction: column; align-items: center;margin-bottom: 20%;}
 .section1column3 h6:last-child{margin-top: 5%;}
 .section1column3 .textbox{background-color: #F6AC82; width: 100%; padding: 5%;  border-radius: 70px 70px 70px 70px; display: flex; align-items: center; justify-content: center; margin-bottom: 10%;}
-.smallgraphbox{padding: 5%; width:100%; border-radius:70px 70px 70px 70px; background-image: url(../img/7pizza.JPG);  background-size: cover ;}
+.smallgraphbox{padding: 5%; width:100%; border-radius:70px 70px 70px 70px; background-image: url(../img/sub_2/7pizza.JPG);  background-size: cover ;}
 .smallgraph{ display: flex; align-items: flex-end; 
    justify-content: center; text-align: center; }
 .smallgraph div:nth-of-type(1)>div{background-color: #D7E2AA; width:80px; height: 100px;}
@@ -273,7 +273,7 @@ margin: 0 5px;}
   /* 섹션1-3*/
   .section1column3{height: 500px; display: flex; flex-direction: column; align-items: center;}
   .section1column3 .textbox{background-color: #F6AC82; width: 90%; border-radius: 70px 70px 70px 70px; display: flex; align-items: center; justify-content: center; margin-bottom: 5%;}
-  .smallgraphbox{width:90%; border-radius:70px 70px 70px 70px; background-image: url(../img/7pizza.JPG);  background-size: cover ; margin-bottom: 50%;}
+  .smallgraphbox{width:90%; border-radius:70px 70px 70px 70px; background-image: url(../img/sub_2/7pizza.JPG);  background-size: cover ; margin-bottom: 50%;}
   .smallgraph{width:100%; display: flex; align-items: flex-end; 
      justify-content: space-around; text-align: center; }
   .smallgraph div:nth-of-type(1)>div{background-color: #D7E2AA; width:80px; height: 100px;}
@@ -453,7 +453,7 @@ margin-bottom: 3%;}
 /* 섹션1-3*/
 .section1column3{height: 500px; display: flex; }
 .section1column3 .textbox{background-color: #F6AC82; width: 50%; border-radius: 70px 0 0 70px; display: flex; align-items: center; justify-content: center;}
-.smallgraphbox{width: 50%; border-radius:0 70px 70px 0; background-image: url(../img/7pizza.JPG);  background-size: cover ;}
+.smallgraphbox{width: 50%; border-radius:0 70px 70px 0; background-image: url(../img/sub_2/7pizza.JPG);  background-size: cover ;}
 .smallgraph{height: 80%; display: flex; align-items: flex-end; 
    justify-content: space-around; text-align: center; }
 .smallgraph div:nth-of-type(1)>div{background-color: #D7E2AA; width:80px; height: 100px;}

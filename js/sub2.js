@@ -27,10 +27,10 @@ $(document).ready(function () {
        function changeimage(){
         if (window.matchMedia("(max-width: 1359px)").matches) {
            
-            $(".section1column2 .arrowbox img").attr("src", "img/mobilearrow.png")
+            $(".section1column2 .arrowbox img").attr("src", "img/sub_2/mobilearrow.png")
         } else {
  
-            $(".section1column2 .arrowbox img").attr("src", "img/Group1.png")
+            $(".section1column2 .arrowbox img").attr("src", "img/sub_2/Group1.png")
         }
     }
 
