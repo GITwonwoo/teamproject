@@ -240,8 +240,7 @@ margin: 0 5px;}
   .container{width: 90%;}
   #section1 h6{margin: 2%;}
   #section1 h5{margin: 2%;}
-  #section1{margin-bottom: 20% 0;
-       position: relative; display: flex; flex-direction: column;}
+  #section1{margin-bottom: 20%; position: relative; display: flex; flex-direction: column;}
   .section1column1{width: 100%; height: 300px;}
   .section1column1 div{text-align: center; margin:15%; color: black;}
   .textbg{background-color:#D7E2AA; font-size: var(--main-title);}
