@@ -3,8 +3,8 @@
 
 @media(max-width:699px) {
 html{font-size: 3.5px;} 
-h6,u{font-size: var(--size-xs);} /*15px*/
-h5{font-size: var(--size-s);} /*20px*/
+h6{font-size: var(--size-xs);} /*15px*/
+h5,u{font-size: var(--size-s);} /*20px*/
 h4{font-size: var(--size-m);} /*30px*/
 h3{font-size: var(--size-l);} /*50px*/
 h2{font-size: var(--size-l); } /*65px*/
