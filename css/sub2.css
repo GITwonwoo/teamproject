@@ -96,7 +96,7 @@ h1{font-size: var(--slide-title);} /*100px*/
 .smallgraphbox{padding: 5%; width:100%; border-radius:70px 70px 70px 70px; background-image: url(../img/7pizza.JPG);  background-size: cover ;}
 .smallgraph{ display: flex; align-items: flex-end; 
    justify-content: center; text-align: center; }
-.smallgraph div:nth-of-type(1)>div{background-color: #787878; width:50px; height: 100px;}
+.smallgraph div:nth-of-type(1)>div{background-color: #D7E2AA; width:80px; height: 100px;}
 .smallgraph div:nth-of-type(2)>div{background-color: lightgray; width:50px; height: 150px;}
 .smallgraph div:nth-of-type(3)>div{background-color: #EC6A40; width: 70px; height: 200px;} 
 .smallgraph div:nth-of-type(1)>h5{color: white; }
@@ -115,39 +115,24 @@ h1{font-size: var(--slide-title);} /*100px*/
   100% {height: 200px; }  
 }
                      /* 섹션2222 */
-#section2{margin: 40% 0%;}
-#section2container{width: 90%;}
+#section2{height: 100%; margin: 40% 0;}
 #section2 .titlebox{text-align: center; margin: 5%;}
-.titlebox h6{color: #787878;}
-#section2 .table_caption{text-align: right; margin-bottom: 15px; padding-right: 40px; color: #787878;}
-
-
-
-/* 테이블 */
-#section2 .table_wrap{max-width: 1300px; margin: 0 auto;}
-#section2 .div-table{border-radius: 50px; overflow: hidden; background-color: white;}
 #section2 .titlebox{transform: translateY(100px); opacity: 0; transition: 0.5s;}
+.titlebox h6{color: #787878; margin-top: 3%;}
 
+.vat{text-align: right; color: #787878; margin-right: 5%;}
 
-/* dl */
-.div-table dl{display: flex; justify-content: flex-start; align-items: stretch;}
-.div-table dl{display: flex; justify-content: flex-start; align-items: stretch;}
-/* dt */
-.div-table dt:nth-child(1), .div-table dd:nth-child(1){width: 280px;}
-.div-table dt:nth-child(2),.div-table dd:nth-child(2){width: 500px; flex-direction: column;}
-.div-table dt:nth-child(3),.div-table dd:nth-child(3){width: 280px;}
-.div-table dt{display: flex; justify-content: center; align-items: center; background-color: #F6AC82; color: white; min-height: 70px;
-  font-weight: var(--weight-bb);}
-/* dd */
-.div-table dd{ display: flex; justify-content: center;  align-items: center; min-height: 70px; padding: 5px 10px; text-align: center;} 
-.div-table dd:nth-child(2){color: #787878; }
-/* label*/
-#section2 .label{display: flex;justify-content: center; align-items: center;
-flex-direction: column; background-color: #D7E2AA; border-radius: 50px;padding: 0.5vw; transition: 0.5s;}
+.tablebox th{background-color: #F6AC82; width: 1300px; padding: 30px; color: white; }
+.tablebox tr{height: 80px; text-align: center;}
+.border th:nth-of-type(1){width: 400px;}
+.tablebox td:nth-child(2){color: #787878;}
+.border th:nth-of-type(3){width: 400px;}
+.tablebox{background-color: white; overflow: hidden; border-radius: 50px 50px 50px 50px;}
 
-.div-table .table_guide{margin-top: 15px; padding: 30px 50px;
-background-color: #F6AC82;}
-
+/* label animaiton*/
+#section2 .label{ width:50%; margin: 0 auto; background-color: #D7E2AA; border-radius: 50px; transition: 0.5s; padding: 2%; width: 22vw;}
+.tablebox tr:last-child td{background-color:#F6AC82; text-align: left; padding-left: 5%;}
+#section2 table{border-collapse: collapse;}
 
 
                      /* 섹션33333333 */
@@ -297,7 +282,7 @@ margin: 0 5px;}
   .smallgraphbox{width:90%; border-radius:70px 70px 70px 70px; background-image: url(../img/7pizza.JPG);  background-size: cover ; margin-bottom: 50%;}
   .smallgraph{width:100%; display: flex; align-items: flex-end; 
      justify-content: space-around; text-align: center; }
-  .smallgraph div:nth-of-type(1)>div{background-color: #787878; width:80px; height: 100px;}
+  .smallgraph div:nth-of-type(1)>div{background-color: #D7E2AA; width:80px; height: 100px;}
   .smallgraph div:nth-of-type(2)>div{background-color: lightgray; width:80px; height: 150px;}
   .smallgraph div:nth-of-type(3)>div{background-color: #EC6A40; width: 100px; height: 200px; margin-left: 22%;} 
   .smallgraph div:nth-of-type(1)>h5{color: white; }
@@ -316,38 +301,24 @@ margin: 0 5px;}
     100% {height: 200px; }  
   }
                        /* 섹션2222 */
-  #section2{margin: 40% 0;}                     
-  #section2container{width: 90%;}
-  #section2 .titlebox{text-align: center; margin: 5%;}
-  .titlebox h6{color: #787878;}
-  #section2 .table_caption{text-align: right; margin-bottom: 15px; padding-right: 40px; color: #787878;}
-  
-  
-  
-  /* 테이블 */
-  #section2 .table_wrap{max-width: 1300px; margin: 0 auto;}
-  #section2 .div-table{border-radius: 50px; overflow: hidden; background-color: white;}
-  #section2 .titlebox{transform: translateY(100px); opacity: 0; transition: 0.5s;}
-  
-  
-  /* dl */
-  .div-table dl{display: flex; justify-content: flex-start; align-items: stretch;}
-  .div-table dl{display: flex; justify-content: flex-start; align-items: stretch;}
-  /* dt */
-  .div-table dt:nth-child(1), .div-table dd:nth-child(1){width: 280px;}
-  .div-table dt:nth-child(2),.div-table dd:nth-child(2){width: 100%; flex-direction: column;}
-  .div-table dt:nth-child(3),.div-table dd:nth-child(3){width: 280px;}
-  .div-table dt{display: flex; justify-content: center; align-items: center; background-color: #F6AC82; color: white; min-height: 70px;
-    font-weight: var(--weight-bb);}
-  /* dd */
-  .div-table dd{ display: flex; justify-content: center;  align-items: center; min-height: 70px; padding: 5px 10px; text-align: center;} 
-  .div-table dd:nth-child(2){color: #787878; }
-  /* label*/
-  #section2 .label{display: flex;justify-content: center; align-items: center;
-  flex-direction: column; background-color: #D7E2AA; border-radius: 50px;padding: 0.5vw; transition: 0.5s;}
-  
-  .div-table .table_guide{margin-top: 15px; padding: 30px 50px;
-  background-color: #F6AC82;}
+#section2{height: 100%; margin: 40% 0;}
+#section2 .titlebox{text-align: center; margin: 5%;}
+#section2 .titlebox{transform: translateY(100px); opacity: 0; transition: 0.5s;}
+.titlebox h6{color: #787878; margin-top: 3%;}
+
+.vat{text-align: right; color: #787878; margin-right: 5%;}
+
+.tablebox th{background-color: #F6AC82; width: 1300px; padding: 30px; color: white; }
+.tablebox tr{height: 80px; text-align: center;}
+.border th:nth-of-type(1){width: 400px;}
+.tablebox td:nth-child(2){color: #787878;}
+.border th:nth-of-type(3){width: 400px;}
+.tablebox{background-color: white; overflow: hidden; border-radius: 50px 50px 50px 50px;}
+
+/* label animaiton*/
+#section2 .label{ width:50%; margin: 0 auto; background-color: #D7E2AA; border-radius: 50px; transition: 0.5s;  padding: 2%;}
+.tablebox tr:last-child td{background-color:#F6AC82; text-align: left; padding-left: 5%;}
+#section2 table{border-collapse: collapse;}
   
   
   
@@ -490,7 +461,7 @@ margin-bottom: 3%;}
 .smallgraphbox{width: 50%; border-radius:0 70px 70px 0; background-image: url(../img/7pizza.JPG);  background-size: cover ;}
 .smallgraph{height: 80%; display: flex; align-items: flex-end; 
    justify-content: space-around; text-align: center; }
-.smallgraph div:nth-of-type(1)>div{background-color: #787878; width:80px; height: 100px;}
+.smallgraph div:nth-of-type(1)>div{background-color: #D7E2AA; width:80px; height: 100px;}
 .smallgraph div:nth-of-type(2)>div{background-color: lightgray; width:80px; height: 150px;}
 .smallgraph div:nth-of-type(3)>div{background-color: #EC6A40; width: 100px; height: 200px; margin-left: 22%;} 
 .smallgraph div:nth-of-type(1)>h5{color: white; }
@@ -511,35 +482,22 @@ margin-bottom: 3%;}
                      /* 섹션2222 */
 #section2{height: 100%; margin: 20% 0;}
 #section2 .titlebox{text-align: center; margin: 5%;}
-.titlebox h6{color: #787878; margin-top: 3%;}
-#section2 .table_caption{text-align: right; margin-bottom: 15px; padding-right: 40px; color: #787878;}
-
-
-
-/* 테이블 */
-#section2 .table_wrap{max-width: 1300px; margin: 0 auto;}
-#section2 .div-table{border-radius: 50px; overflow: hidden; background-color: white;}
 #section2 .titlebox{transform: translateY(100px); opacity: 0; transition: 0.5s;}
+.titlebox h6{color: #787878; margin-top: 3%;}
 
+.vat{text-align: right; color: #787878; margin-right: 5%;}
 
-/* dl */
-.div-table dl{display: flex; justify-content: flex-start; align-items: stretch;}
-.div-table dl{display: flex; justify-content: flex-start; align-items: stretch;}
-/* dt */
-.div-table dt:nth-child(1), .div-table dd:nth-child(1){width: 280px;}
-.div-table dt:nth-child(2),.div-table dd:nth-child(2){flex-grow: 1; flex-direction: column;}
-.div-table dt:nth-child(3),.div-table dd:nth-child(3){width: 280px;}
-.div-table dt{display: flex; justify-content: center; align-items: center; background-color: #F6AC82; color: white; min-height: 70px;
-  font-weight: var(--weight-bb);}
-/* dd */
-.div-table dd{ display: flex; justify-content: center; align-items: center; min-height: 70px; padding: 5px 10px;} 
-.div-table dd:nth-child(2){color: #787878;}
-/* label*/
-#section2 .label{display: flex;justify-content: center; align-items: center;
-flex-direction: column; background-color: #D7E2AA; border-radius: 50px;padding: 0.5vw; transition: 0.5s;}
+.tablebox th{background-color: #F6AC82; width: 1300px; padding: 30px; color: white; }
+.tablebox tr{height: 80px; text-align: center;}
+.border th:nth-of-type(1){width: 400px;}
+.tablebox td:nth-child(2){color: #787878;}
+.border th:nth-of-type(3){width: 400px;}
+.tablebox{background-color: white; overflow: hidden; border-radius: 50px 50px 50px 50px;}
 
-.div-table .table_guide{margin-top: 15px; padding: 30px 50px;
-background-color: #F6AC82;}
+/* label animaiton*/
+#section2 .label{ width:50%; margin: 0 auto; background-color: #D7E2AA; border-radius: 50px; transition: 0.5s; padding: 2%;}
+.tablebox tr:last-child td{background-color:#F6AC82; text-align: left; padding-left: 5%;}
+#section2 table{border-collapse: collapse;}
 
 
 
